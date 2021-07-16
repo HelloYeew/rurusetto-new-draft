@@ -14,6 +14,24 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+/*header {*/
+/*    height:10vh;*/
+/*    background-size: cover;*/
+/*    !*background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0)), url(https://osu.ppy.sh/assets/images/button.16de7c2c.svg);*!*/
+/*    !*background-position: bottom;*!*/
+/*    !*background-repeat: repeat-x;*!*/
+/*    !*filter: hue-rotate(255deg);*!*/
+/*}*/
+
+#profile-picture, #header-logo{
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+#header {
+    background-color: rgba(74,74,74,0);
+    transition: 0.2s;
+}
+
 footer {
     background-color: #4a4a4a;
 }
@@ -21,8 +39,8 @@ footer {
 .hero {
     height:30vh;
     min-height:400px;
-    background-size:cover;
-    background-image:linear-gradient(to bottom, transparent, #2d2d2d), url('assets/img/789194.jpeg');
+    background-size: cover;
+    background-image: linear-gradient(to bottom, transparent, #2d2d2d), url('assets/img/789194.jpeg');
     margin:0!important;
     padding:12vh!important;
 }
