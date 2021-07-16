@@ -2,7 +2,7 @@ body {
     background-color: #2d2d2d;
 }
 
-h1 {
+h1, h2 {
     color: white;
     font-family: all-round-gothic, sans-serif;
     font-weight: 600;
@@ -14,13 +14,17 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+footer {
+    background-color: #4a4a4a;
+}
+
 .hero {
-    height:35vh;
-    min-height:300px;
+    height:30vh;
+    min-height:400px;
     background-size:cover;
     background-image:linear-gradient(to bottom, transparent, #2d2d2d), url('assets/img/789194.jpeg');
     margin:0!important;
-    padding:8vh!important;
+    padding:12vh!important;
 }
 
 .nav-text {
@@ -37,4 +41,8 @@ p {
     font-family: all-round-gothic, sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
 }
