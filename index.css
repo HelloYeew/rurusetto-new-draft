@@ -1,0 +1,6 @@
+header {
+    height:60vh;
+    min-height:400px;
+    background-size:cover;
+    background-image:url('https://ta-assistant-draft.netlify.app/assets/img/bg/your-name.png');
+}
