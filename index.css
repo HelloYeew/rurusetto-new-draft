@@ -1,6 +1,38 @@
+body {
+    background-color: #2d2d2d;
+}
+
 header {
-    height:60vh;
+    height:40vh;
     min-height:400px;
     background-size:cover;
-    background-image:url('https://ta-assistant-draft.netlify.app/assets/img/bg/your-name.png');
+    background-image:linear-gradient(to bottom, transparent, #2d2d2d), url('assets/img/789194.jpeg');
+}
+
+h1 {
+    color: white;
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-text {
+    color: #ff63ac;
+}
+
+.round-font-normal {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.round-font-bold {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
