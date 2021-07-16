@@ -65,3 +65,9 @@ footer {
 .text-muted {
     color: #b3b3b3 !important;
 }
+
+.btn-rurusetto {
+    background-color: #ff66aa!important;
+    color: #fff!important;
+    border-color: #ff66aa!important;
+}
