@@ -24,7 +24,7 @@ p {
 /*}*/
 
 #profile-picture, #header-logo{
-    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition: 0.2s;
 }
 
 #header {
@@ -47,6 +47,7 @@ footer {
 
 .nav-text {
     color: #ff63ac;
+    font-size: 20px;
 }
 
 .round-font-normal {
