@@ -104,3 +104,8 @@ a.dropdown-item {
 .dropdown-item:hover {
     background-color: #8f8f8f;
 }
+
+.text-box {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
