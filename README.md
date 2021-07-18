@@ -6,7 +6,7 @@ New design draft of Rūrusetto UI.
 
 # About new site of Rūrusetto
 
-New site of Rūrusetto is planned for a month now since the codebase is expanding and some function of website is not support by Hugo (static framework that we use to make a current site.) That's why we fix this problem why make a new repository of already build website and use the main repository as dev version of website.
+New site of Rūrusetto is planned for a month now since the codebase is expanding and some function of website is not support by Hugo (static website generator that we use to make a current site.) That's why we fix this problem why make a new repository of already build website and use the main repository as dev version of website.
 
 # Q&A
 
