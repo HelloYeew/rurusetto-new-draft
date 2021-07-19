@@ -100,15 +100,6 @@ footer {
 
 a.dropdown-item {
     font-family: 'Raleway', sans-serif;
-    color: #ffffff;
-}
-
-.dropdown-menu {
-    background-color: #5f5f5f;
-}
-
-.dropdown-item:hover {
-    background-color: #8f8f8f;
 }
 
 .dropdown-pfp::after {
