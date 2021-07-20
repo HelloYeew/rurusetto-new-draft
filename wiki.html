@@ -44,13 +44,212 @@
         </div>
     </header>
 
-    <div class="px-4 py-4 my-4 text-center align-middle hero">
+    <div class="px-4 py-4 my-4 align-middle hero">
 <!--        <img class="d-block mx-auto mb-4" src="assets/logo/rurusetto-logo-white.svg" alt="Rurusetto Logo" height="65">-->
-        <h1 class="display-5 fw-bold text-white"></h1>
-        <div class="col-lg-4 mx-auto">
-            <p class="lead mb-4 text-white"></p>
+<!--        <h1 class="mb-3 display-5 fw-bold text-white">Sentakki</h1>-->
+<!--        <div class="col-lg-4 mx-auto">-->
+<!--            <p class="lead mb-4 text-white"></p>-->
+<!--        </div>-->
+        <div class="container align-middle">
+            <div class="row">
+                <p class="text-muted"><img src="https://github.com/LumpBloom7.png" alt="Bloom" width="32" height="32" class="rounded-circle"> Bloom</p>
+                <div><h1 class="display-5 fw-bold">Sentakki</h1></div>
+                <p>A custom ruleset based on Sega’s arcade rhythm game maimai</p>
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 id="status">status</h1>
+                <ul>
+                    <li>Status : Active development</li>
+                    <li id="version">Last Update : Fetching data...</li>
+                    <li>Can import and play without error : Yes</li>
+                </ul>
+                <h1 id="overview">overview</h1>
+                <ul>
+                    <li>Creator : <a href="https://github.com/LumpBloom7">Bloom</a></li>
+                    <li>Availability : Available publicly</li>
+                    <li>GitHub Repositories : <a href="https://github.com/LumpBloom7/sentakki">LumpBloom7/sentakki</a></li>
+                    <li>Discord : <a href="https://discord.gg/CQPNADu">hishikki Dev Server</a></li>
+                    <li>Support : <a href="https://github.com/sponsors/LumpBloom7">GitHub Sponsor</a>, <a href="https://ko-fi.com/bloom">Ko-fi</a> or <a href="https://www.paypal.com/paypalme/DerrickTimmermans">PayPal</a></li>
+                </ul>
+                <p>Sentakki is a custom ruleset based on Sega&rsquo;s arcade rhythm game maimai. The ruleset is developed by Bloom.</p>
+                <h1 id="gameplay">gameplay</h1>
+                <p>Tap, touch, slide, hold to the beat! Sentakki have mainly 6 different note types. You can see all note types detail <a href="https://github.com/LumpBloom7/sentakki/wiki/Note-types">here</a>.</p>
+                <h1 id="controls">controls</h1>
+                <p>Sentakki is primarily designed with touch screens in mind. However traditional input methods aren&rsquo;t left out, and it&rsquo;s possible to play with the mouse. Twin experiment could be activated to make full use of multi-touch.</p>
+                <h3 id="default-controls">default controls</h3>
+                <ul>
+                    <li>Button 1 - <code>Z</code> <code>M1</code></li>
+                    <li>Button 2 - <code>X</code> <code>M2</code></li>
+                    <li>Key 1 - <code>1</code></li>
+                    <li>Key 2 - <code>2</code></li>
+                    <li>Key 3 - <code>3</code></li>
+                    <li>Key 4 - <code>4</code></li>
+                    <li>Key 5 - <code>5</code></li>
+                    <li>Key 6 - <code>6</code></li>
+                    <li>Key 7 - <code>7</code></li>
+                    <li>Key 8 - <code>8</code></li>
+                </ul>
+                <h1 id="mods">mods</h1>
+                <h3 id="difficulty-reduction">difficulty reduction</h3>
+                <ul>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/half-time-mod.png" alt="Half Time Icon"> Half Time</p>
+                        <ul>
+                            <li>Less Zoom&hellip;
+                                <ul>
+                                    <li>Decreases speed .75x.</li>
+                                </ul>
+                            </li>
+                            <li>Score Multiplier: 0.30x</li>
+                            <li>Click the icon again for <code>Daycore Mod</code> : Whoaaaaa&hellip;
+                                <ul>
+                                    <li>Decreases speed .75x and lowers audio pitch.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/no-fail-mod.png" alt="No Fail Icon"> No Fail</p>
+                        <ul>
+                            <li>You can&rsquo;t fail, no matter what.
+                                <ul>
+                                    <li>Make it impossoble to fail.</li>
+                                </ul>
+                            </li>
+                            <li>Score Multiplier: 0.50x</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="difficulty-increase">difficulty increase</h3>
+                <ul>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/hard-rock-mod.png" alt="Hard Rock Icon"> Hard Rock</p>
+                        <ul>
+                            <li>Everything just got a bit harder&hellip;</li>
+                            <li>Score Multiplier: 1.06x</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/sudden-death-mod.png" alt="Sudden Death Icon"> Sudden Death</p>
+                        <ul>
+                            <li>Miss and fail.
+                                <ul>
+                                    <li>If you miss, you fail.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/challenge-mod.png" alt="Challenge Icon"> Challenge</p>
+                        <ul>
+                            <li>You only get a small margin for error
+                                <ul>
+                                    <li>Decrease max health to make a game more challenge.</li>
+                                </ul>
+                            </li>
+                            <li>You can select <em>number of lives</em> option from 5,10,20,50,100,200 and 300</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/double-time-mod.png" alt="Double Time Icon"> Double Time</p>
+                        <ul>
+                            <li>Zoooooooooom&hellip;
+                                <ul>
+                                    <li>Increases speed 1.50x.</li>
+                                </ul>
+                            </li>
+                            <li>Score Multiplier: 1.12x</li>
+                            <li>Click the icon again for <code>Nightcore Mod</code> : Uguuuuuuuu&hellip;
+                                <ul>
+                                    <li>Increases speed 1.50x and raises audio pitch.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="automation">automation</h3>
+                <ul>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/autoplay-mod.png" alt="Autoplay Icon"> Autoplay</p>
+                        <ul>
+                            <li>Watch a perfect automated play through the song.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/auto-touch-mod.png" alt="Auto Touch Icon"> Auto Touch</p>
+                        <ul>
+                            <li>Focused on the laned notes. Touch screen notes will be completed automatically.</li>
+                            <li>Score Multiplier: 0.50x</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="conversion">conversion</h3>
+                <ul>
+                    <li><img src="https://rulesets.info/posts/sentakki/mod-icon/mirror-mod.png" alt="Mirror Icon"> Mirror
+                        <ul>
+                            <li>Flip the playfield horizontally, vertically or both!</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3 id="fun">fun</h3>
+                <ul>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/wind-up-mod.png" alt="Wind Up Icon"> Wind Up</p>
+                        <ul>
+                            <li>Can you keep up?
+                                <ul>
+                                    <li>Slowly increases speed from 1.00x to 1.50x throughout the map and raises the pitch alongside the speed.</li>
+                                </ul>
+                            </li>
+                            <li>The song speed will be getting faster and faster</li>
+                            <li>Click the icon again will be <code>Wind Down Mod</code> : Slooow doooown&hellip;
+                                <ul>
+                                    <li>Slowly decreases speed from 1.00x to 0.75x throughout the map and lowers the pitch alongside the speed.</li>
+                                </ul>
+                            </li>
+                            <li><em>Initial rate</em>, <em>Final rate</em>, and <em>Adjust pitch</em> are customizable parameters.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/spin-mod.png" alt="Spin Icon"> Spin</p>
+                        <ul>
+                            <li>Replicate the true washing machine experience.
+                                <ul>
+                                    <li>Spins the playfield during gameplay</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><img src="https://rulesets.info/posts/sentakki/mod-icon/experimental-mod.png" alt="Experimental Icon"> Experimental</p>
+                        <ul>
+                            <li>Some experimental features to be added to future sentakki builds. Autoplay/No-Fail recommended. Replay unsupported.</li>
+                            <li>Experiment that are availables are <em>Twin notes</em>, <em>Twin slides</em> and <em>Touch notes</em></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1 id="settings">settings</h1>
+                <p>You can see a list of settings and what they do in <a href="https://github.com/LumpBloom7/sentakki/wiki/Options">Sentakki option wiki page</a>.</p>
+                <h1 id="preview">preview</h1>
+
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe src="https://www.youtube.com/embed/BDOc3PSDYFU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+                </div>
+
+            </div>
+            <div class="col">
+                2
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
 
 </body>
 </html>
