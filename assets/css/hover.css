@@ -112,5 +112,8 @@
     letter-spacing: 2px;
 }
 .spacing-hover-short:hover {
-    letter-spacing: 1px;!important
+    letter-spacing: 1px;
+}
+.spacing-hover-short-2:hover {
+    letter-spacing: 0.5px;
 }
