@@ -55,6 +55,11 @@ footer {
 .nav-text {
     color: #ff63ac;
     font-size: 20px;
+    transition: 0.2s
+}
+
+.nav-text:hover {
+    letter-spacing: 2px;
 }
 
 .round-font-normal {
@@ -113,4 +118,12 @@ a.dropdown-item {
 
 .blur-bg {
     backdrop-filter: blur(5px);
+}
+
+.made-by-footer {
+    transition: 0.2s;
+}
+
+.made-by-footer:hover {
+    letter-spacing: 2px;
 }
