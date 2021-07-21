@@ -103,3 +103,11 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+/*Spacing on hover*/
+.spacing-hover {
+    transition: 0.2s;
+}
+.spacing-hover:hover {
+    letter-spacing: 2px;
+}

@@ -1,0 +1,16 @@
+.fa-check-circle {
+    color: #ffb3d4;
+}
+
+.fa-edit {
+    color: #ffb3d4;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    letter-spacing: 2px;
+}
