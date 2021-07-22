@@ -176,6 +176,20 @@ a.dropdown-item {
     opacity: 100%;
 }
 
+.list-group-item {
+    border: 0;
+    background-color: rgba(74, 74, 74, .8);
+}
+
+.list-group {
+    background-color: rgba(74, 74, 74, 0);
+}
+
+.list-group-item:hover {
+    border: 0;
+    background-color: rgba(74, 74, 74, .3);
+}
+
 /*#navbar-expand {*/
 /*    margin-top: 5%;*/
 /*}*/

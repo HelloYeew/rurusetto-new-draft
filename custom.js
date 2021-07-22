@@ -2,6 +2,7 @@ const header = document.getElementById ('header');
 
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
+window.addEventListener('load', function() {scrollFunction()})
 
 function scrollFunction() {
     if (document.documentElement.clientWidth > 992) {
