@@ -50,6 +50,7 @@ footer {
     background-size: cover;
     margin:0!important;
     padding:12vh!important;
+    transition: 0.2s
 }
 
 .nav-text {
@@ -136,3 +137,29 @@ a.dropdown-item {
 .made-by-footer:hover {
     letter-spacing: 2px;
 }
+
+#mobile-header {
+    opacity: 0;
+}
+
+@media (max-width: 992px) {
+    #mobile-header {
+        opacity: 100%;
+    }
+
+    #desktop-header {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 100%;
+}
+
+/*#navbar-expand {*/
+/*    margin-top: 5%;*/
+/*}*/
