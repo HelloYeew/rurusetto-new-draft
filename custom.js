@@ -47,7 +47,7 @@ function scrollFunction() {
 }
 
 function onResize() {
-    if (document.documentElement.clientWidth > 992) {
+    if (document.documentElement.clientWidth > 1010) {
         document.getElementById("header").classList.add('show')
         document.getElementById("header").classList.remove('hidden')
         document.getElementById("header").style.zIndex = "1"
