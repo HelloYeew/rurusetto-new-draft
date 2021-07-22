@@ -143,6 +143,9 @@ a.dropdown-item {
     opacity: 0;
     z-index: 1;
     transition: 0.2s;
+    min-height: 68px;
+    height: 8%;
+    background-color: rgba(74, 74, 74, 0);
 }
 
 #mobile-logo {
@@ -157,6 +160,12 @@ a.dropdown-item {
     #desktop-header {
         opacity: 0;
     }
+}
+
+#navbarToggleExternalContent {
+    margin-top: 77px;
+    background-color: rgba(74, 74, 74, .8);
+    backdrop-filter: blur(5px);
 }
 
 .hidden {

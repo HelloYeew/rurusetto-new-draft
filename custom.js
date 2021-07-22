@@ -29,6 +29,7 @@ function scrollFunction() {
             document.getElementById("mobile-logo").style.marginTop = "-5px";
             document.getElementById("mobile-logo").style.marginLeft = "-5px";
             document.getElementById("mobile-logo").style.height = "45px";
+            document.getElementById("mobile-header").style.backgroundColor = "rgba(74,74,74,.8)";
             document.getElementById("mobile-header").classList.add('blur-bg');
             document.getElementById("navbarToggleExternalContent").style.marginTop = "68px";
         } else {
@@ -37,6 +38,7 @@ function scrollFunction() {
             document.getElementById("mobile-logo").style.marginTop = "0";
             document.getElementById("mobile-logo").style.marginLeft = "0";
             document.getElementById("mobile-logo").style.height = "50px";
+            document.getElementById("mobile-header").style.backgroundColor = "rgba(74,74,74,0)";
             document.getElementById("mobile-header").classList.remove('blur-bg');
             document.getElementById("navbarToggleExternalContent").style.marginTop = "77px";
         }
