@@ -142,6 +142,11 @@ a.dropdown-item {
 #mobile-header {
     opacity: 0;
     z-index: 1;
+    transition: 0.2s;
+}
+
+#mobile-logo {
+    transition: 0.2s;
 }
 
 @media (max-width: 992px) {
