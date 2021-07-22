@@ -25,16 +25,20 @@ function scrollFunction() {
     } else {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("mobile-header").style.height = "7%";
-            document.getElementById("mobile-logo").style.marginTop = "-7px";
-            document.getElementById("mobile-logo").style.marginLeft = "-7px";
+            document.getElementById("mobile-header").style.minHeight = "68px";
+            document.getElementById("mobile-logo").style.marginTop = "-5px";
+            document.getElementById("mobile-logo").style.marginLeft = "-5px";
             document.getElementById("mobile-logo").style.height = "45px";
-            document.getElementById("mobile-header").classList.add('blur-bg')
+            document.getElementById("mobile-header").classList.add('blur-bg');
+            document.getElementById("navbarToggleExternalContent").style.marginTop = "68px";
         } else {
             document.getElementById("mobile-header").style.height = "8%";
+            document.getElementById("mobile-header").style.minHeight = "75px";
             document.getElementById("mobile-logo").style.marginTop = "0";
             document.getElementById("mobile-logo").style.marginLeft = "0";
             document.getElementById("mobile-logo").style.height = "50px";
-            document.getElementById("mobile-header").classList.remove('blur-bg')
+            document.getElementById("mobile-header").classList.remove('blur-bg');
+            document.getElementById("navbarToggleExternalContent").style.marginTop = "77px";
         }
     }
 }
