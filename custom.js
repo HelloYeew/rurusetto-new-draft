@@ -5,7 +5,7 @@ window.onresize = function() {onResize()};
 window.addEventListener('load', function() {scrollFunction()})
 
 function scrollFunction() {
-    if (document.documentElement.clientWidth > 992) {
+    if (document.documentElement.clientWidth > 1010) {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("profile-picture").style.height = "32px";
             document.getElementById("header-logo").style.height = "50px";
