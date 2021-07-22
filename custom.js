@@ -27,11 +27,13 @@ function scrollFunction() {
             document.getElementById("mobile-header").style.height = "7%";
             document.getElementById("mobile-logo").style.marginTop = "-7px";
             document.getElementById("mobile-logo").style.marginLeft = "-7px";
+            document.getElementById("mobile-logo").style.height = "45px";
             document.getElementById("mobile-header").classList.add('blur-bg')
         } else {
             document.getElementById("mobile-header").style.height = "8%";
             document.getElementById("mobile-logo").style.marginTop = "0";
             document.getElementById("mobile-logo").style.marginLeft = "0";
+            document.getElementById("mobile-logo").style.height = "50px";
             document.getElementById("mobile-header").classList.remove('blur-bg')
         }
     }
