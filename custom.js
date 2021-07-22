@@ -27,9 +27,13 @@ function onResize() {
     if (document.documentElement.clientWidth > 992) {
         document.getElementById("header").classList.add('show')
         document.getElementById("header").classList.remove('hidden')
+        document.getElementById("header").style.zIndex = "1"
+        document.getElementById("mobile-header").style.zIndex = "0"
     } else {
         document.getElementById("header").classList.add('hidden')
         document.getElementById("header").classList.remove('show')
+        document.getElementById("header").style.zIndex = "0"
+        document.getElementById("mobile-header").style.zIndex = "1"
     }
 }
 
