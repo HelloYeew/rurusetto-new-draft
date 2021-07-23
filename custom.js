@@ -1,5 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
+window.onresize = function() {arrangeWIki()};
 window.addEventListener('load', function() {scrollFunction()})
 
 function scrollFunction() {
@@ -41,6 +42,16 @@ function scrollFunction() {
             document.getElementById("mobile-header").classList.remove('blur-bg');
             document.getElementById("navbarToggleExternalContent").style.marginTop = "77px";
         }
+    }
+}
+
+function arrangeWIki() {
+    if (document.documentElement.clientWidth <= 991) {
+        document.getElementById("infobox").classList.remove('col-sm-3');
+        document.getElementById("wiki").classList.remove('col-sm-9');
+    } else {
+        document.getElementById("infobox").classList.add('col-sm-3');
+        document.getElementById("wiki").classList.add('col-sm-9');
     }
 }
 

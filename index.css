@@ -163,6 +163,20 @@ a.dropdown-item {
     }
 }
 
+@media (max-width: 991px) {
+    #last-edit {
+        order: 1;
+    }
+
+    #infobox {
+        order: 2;
+    }
+
+    #wiki {
+        order: 3;
+    }
+}
+
 #navbarToggleExternalContent {
     margin-top: 77px;
     background-color: rgba(74, 74, 74, .8);
