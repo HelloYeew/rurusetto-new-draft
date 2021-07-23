@@ -1,5 +1,3 @@
-const header = document.getElementById ('header');
-
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
 window.addEventListener('load', function() {scrollFunction()})
@@ -57,6 +55,16 @@ function onResize() {
         document.getElementById("header").classList.remove('show')
         document.getElementById("header").style.zIndex = "0"
         document.getElementById("mobile-header").style.zIndex = "1"
+    }
+}
+
+function rotateArrowMenu() {
+    if (document.getElementById("profile-menu").getAttribute("aria-expanded") === "false" || document.getElementById("arrow-profile-menu").classList.contains('fa-chevron-down')) {
+        document.getElementById("arrow-profile-menu").classList.remove('fa-chevron-down')
+        document.getElementById("arrow-profile-menu").classList.add('fa-chevron-up')
+    } else {
+        document.getElementById("arrow-profile-menu").classList.remove('fa-chevron-up')
+        document.getElementById("arrow-profile-menu").classList.add('fa-chevron-down')
     }
 }
 
