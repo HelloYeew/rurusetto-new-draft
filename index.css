@@ -215,6 +215,12 @@ a.dropdown-item {
     rotation: 180deg;
 }
 
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+
 /*#navbar-expand {*/
 /*    margin-top: 5%;*/
 /*}*/
