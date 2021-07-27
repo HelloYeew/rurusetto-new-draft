@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
-window.onresize = function() {checkHeader()};
-window.onresize = function() {arrangeWIki()};
+// window.onresize = function() {checkHeader()};
+// window.onresize = function() {arrangeWIki()};
 window.onload = function() {arrangeWIki()};
 window.addEventListener('load', function() {scrollFunction()})
 
@@ -51,19 +51,9 @@ function arrangeWIki() {
     if (document.documentElement.clientWidth <= 991) {
         document.getElementById("infobox").classList.remove('col-sm-3');
         document.getElementById("wiki").classList.remove('col-sm-9');
-        document.getElementById("nav-listing").classList.add('disabled')
-        document.getElementById("nav-install").classList.add('disabled')
-        document.getElementById("nav-status").classList.add('disabled')
-        document.getElementById("profile-picture").classList.add('disabled')
-        document.getElementById("header-logo").classList.add('disabled')
     } else {
         document.getElementById("infobox").classList.add('col-sm-3');
         document.getElementById("wiki").classList.add('col-sm-9');
-        document.getElementById("nav-listing").classList.remove('disabled')
-        document.getElementById("nav-install").classList.remove('disabled')
-        document.getElementById("nav-status").classList.remove('disabled')
-        document.getElementById("profile-picture").classList.remove('disabled')
-        document.getElementById("header-logo").classList.remove('disabled')
     }
 }
 
@@ -74,17 +64,22 @@ function onResize() {
         document.getElementById("header").classList.remove('hidden')
         document.getElementById("header").style.zIndex = "2"
         document.getElementById("mobile-header").style.zIndex = "0"
+        document.getElementById("nav-listing").classList.remove('disabled')
+        document.getElementById("nav-install").classList.remove('disabled')
+        document.getElementById("nav-status").classList.remove('disabled')
+        document.getElementById("profile-picture").classList.remove('disabled')
+        document.getElementById("header-logo").classList.remove('disabled')
     } else {
         document.getElementById("header").classList.add('hidden')
         document.getElementById("header").classList.remove('show')
         document.getElementById("header").style.zIndex = "0"
         document.getElementById("mobile-header").style.zIndex = "2"
+        document.getElementById("nav-listing").classList.add('disabled')
+        document.getElementById("nav-install").classList.add('disabled')
+        document.getElementById("nav-status").classList.add('disabled')
+        document.getElementById("profile-picture").classList.add('disabled')
+        document.getElementById("header-logo").classList.add('disabled')
     }
-    scrollFunction()
-}
-
-function checkHeader() {
-    console.log("checkHeader");
     if (document.documentElement.clientWidth >= 1010 && document.getElementById("header").classList.contains('hidden')) {
         document.getElementById("header").classList.remove('hidden');
     }
