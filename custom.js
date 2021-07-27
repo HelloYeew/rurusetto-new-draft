@@ -1,5 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
+window.onresize = function() {checkHeader()};
 window.onresize = function() {arrangeWIki()};
 window.onload = function() {arrangeWIki()};
 window.addEventListener('load', function() {scrollFunction()})
@@ -67,6 +68,7 @@ function arrangeWIki() {
 }
 
 function onResize() {
+    console.log("onResize");
     if (document.documentElement.clientWidth >= 1010) {
         document.getElementById("header").classList.add('show')
         document.getElementById("header").classList.remove('hidden')
@@ -78,7 +80,24 @@ function onResize() {
         document.getElementById("header").style.zIndex = "0"
         document.getElementById("mobile-header").style.zIndex = "2"
     }
-    
+    scrollFunction()
+}
+
+function checkHeader() {
+    console.log("checkHeader");
+    if (document.documentElement.clientWidth >= 1010 && document.getElementById("header").classList.contains('hidden')) {
+        document.getElementById("header").classList.remove('hidden');
+    }
+
+    if ((document.documentElement.clientWidth < 1010 && document.getElementById("header").style.backgroundColor === "rgba(74,74,74,0.8)") ||
+        (document.documentElement.clientWidth < 1010 && document.getElementById("header").classList.contains('show'))) {
+        document.getElementById("header").style.backgroundColor = "rgba(74,74,74,0)";
+    }
+
+    if (document.documentElement.clientWidth < 1010 && document.getElementById("header").classList.contains('show')) {
+        document.getElementById("header").classList.add('hidden');
+    }
+    scrollFunction()
 }
 
 function rotateArrowMenu() {
