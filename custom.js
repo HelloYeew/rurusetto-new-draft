@@ -1,7 +1,5 @@
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {onResize()};
-// window.onresize = function() {checkHeader()};
-// window.onresize = function() {arrangeWIki()};
 window.onload = function() {arrangeWIki()};
 window.addEventListener('load', function() {scrollFunction()})
 
@@ -58,7 +56,6 @@ function arrangeWIki() {
 }
 
 function onResize() {
-    console.log("onResize");
     if (document.documentElement.clientWidth >= 1010) {
         document.getElementById("header").classList.add('show')
         document.getElementById("header").classList.remove('hidden')
