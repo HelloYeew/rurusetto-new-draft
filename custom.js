@@ -78,42 +78,7 @@ function onResize() {
         document.getElementById("header").style.zIndex = "0"
         document.getElementById("mobile-header").style.zIndex = "2"
     }
-
-    if (document.documentElement.clientWidth > 1010 && document.getElementById("header").classList.contains('hidden')) {
-        document.getElementById("header").classList.add('show')
-        document.getElementById("header").classList.remove('hidden')
-    }
-
-    if (document.documentElement.clientWidth > 1010 && document.getElementById("mobile-header").classList.contains('show')) {
-        document.getElementById("header").classList.add('hidden')
-        document.getElementById("header").classList.remove('show')
-    }
-
-    if (document.documentElement.clientWidth <= 1010 && document.getElementById("mobile-header").classList.contains('hidden')) {
-        document.getElementById("header").classList.add('show')
-        document.getElementById("header").classList.remove('hidden')
-    }
-
-    if (document.documentElement.clientWidth <= 1010 && document.getElementById("header").classList.contains('show')) {
-        document.getElementById("header").classList.add('hidden')
-        document.getElementById("header").classList.remove('show')
-    }
-
-    if (document.documentElement.clientWidth > 1010 && document.getElementById("header").classList.contains('hidden') && document.getElementById("header").classList.contains('show')) {
-        document.getElementById("header").classList.remove('hidden')
-    }
-
-    if (document.documentElement.clientWidth <= 1010 && document.getElementById("header").classList.contains('hidden') && document.getElementById("header").classList.contains('show')) {
-        document.getElementById("header").classList.remove('show')
-    }
-
-    if (document.documentElement.clientWidth > 1010 && document.getElementById("mobile-header").classList.contains('hidden') && document.getElementById("mobile-header").classList.contains('show')) {
-        document.getElementById("header").classList.remove('show')
-    }
-
-    if (document.documentElement.clientWidth <= 1010 && document.getElementById("mobile-header").classList.contains('hidden') && document.getElementById("mobile-header").classList.contains('show')) {
-        document.getElementById("header").classList.remove('hidden')
-    }
+    
 }
 
 function rotateArrowMenu() {
