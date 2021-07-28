@@ -7,6 +7,7 @@ function scrollFunction() {
     if (document.documentElement.clientWidth >= 1010) {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("profile-picture").style.height = "32px";
+            document.getElementById("profile-picture").style.width = "32px";
             document.getElementById("header-logo").style.height = "50px";
             document.getElementById("header").style.backgroundColor = "rgba(74,74,74,.8)"
             document.getElementById("header").classList.add('blur-bg')
@@ -15,6 +16,7 @@ function scrollFunction() {
             document.getElementById("nav-status").style.fontSize = "18px"
         } else {
             document.getElementById("profile-picture").style.height = "48px";
+            document.getElementById("profile-picture").style.width = "48px";
             document.getElementById("header-logo").style.height = "65px";
             document.getElementById("header").style.backgroundColor = "rgba(74,74,74,0)"
             document.getElementById("header").classList.remove('blur-bg')
@@ -61,6 +63,8 @@ function onResize() {
         document.getElementById("header").classList.remove('hidden')
         document.getElementById("header").style.zIndex = "2"
         document.getElementById("mobile-header").style.zIndex = "0"
+        document.getElementById("profile-picture").style.zIndex = "2"
+        document.getElementById("header-logo").style.zIndex = "2"
         document.getElementById("nav-listing").classList.remove('disabled')
         document.getElementById("nav-install").classList.remove('disabled')
         document.getElementById("nav-status").classList.remove('disabled')
@@ -71,6 +75,8 @@ function onResize() {
         document.getElementById("header").classList.remove('show')
         document.getElementById("header").style.zIndex = "0"
         document.getElementById("mobile-header").style.zIndex = "2"
+        document.getElementById("profile-picture").style.zIndex = "0"
+        document.getElementById("header-logo").style.zIndex = "0"
         document.getElementById("nav-listing").classList.add('disabled')
         document.getElementById("nav-install").classList.add('disabled')
         document.getElementById("nav-status").classList.add('disabled')
