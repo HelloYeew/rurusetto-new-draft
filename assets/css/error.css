@@ -1,0 +1,12 @@
+body {
+    background-image: url("../img/789194.jpeg");
+    background-size: cover;
+}
+
+footer {
+    background-color: rgba(72, 72, 72, 0);
+}
+
+.middle-header-text {
+    font-size: 50px;
+}
